@@ -44,3 +44,10 @@ let artist = {
     age: 31,
     album: 'call Anita'
 };
+let artist2 = {
+    name: 'Kizz Daniel',
+    active: true,
+    age: 4,
+    album: 'Boga'
+};
+artist = artist2;

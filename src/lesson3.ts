@@ -73,3 +73,12 @@ let artist: Guiterrist = {
     age: 31,
     album: 'call Anita'
 }
+
+let artist2: Guiterrist = {
+    name: 'Kizz Daniel',
+    active: true,
+    age: 4,
+    album: 'Boga'
+}
+
+artist = artist2
