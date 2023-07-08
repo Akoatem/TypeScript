@@ -30,3 +30,50 @@ let multiply = function (c, d) {
     return c * d;
 };
 logMsg(multiply(3, 29));
+// optional parameter
+// this works if you make one of the parameter optional
+const addAll = (a, b, c) => {
+    if (typeof c != 'undefined') {
+        return a + b + c;
+    }
+    else {
+        return a + b;
+    }
+};
+// default param value
+const sumAll = (a, b, c = 2) => {
+    return a + b + c;
+};
+logMsg(addAll(3, 5, 7));
+logMsg(addAll(3, 5));
+logMsg(sumAll(3, 5));
+// Rest parameter
+const total = (a, ...nums) => {
+    return a + nums.reduce((prev, curr) => prev + curr);
+};
+logMsg(total(3, 5, 6, 7));
+// Never Type
+const createError = (errMsg) => {
+    throw new Error(errMsg);
+};
+// used case which turn to void
+const infinite = () => {
+    let i = 1;
+    while (true) {
+        i++;
+        if (i > 100)
+            break;
+    }
+};
+// instead we can create a custom function
+const isNumber = (value) => {
+    return (typeof value === 'number')
+        ? true : false;
+};
+const stringOrNumber = (value) => {
+    if (typeof value === 'string')
+        return 'string';
+    if (isNumber(value))
+        return 'number';
+    return createError('this should never happened');
+};
