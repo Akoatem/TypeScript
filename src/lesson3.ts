@@ -59,7 +59,7 @@ exampleObj.age = 31
 console.log(exampleObj)
 
 //using type
-
+// you can use interface and remove = sign
 type Guiterrist = {
     name: string,
     active: boolean,
@@ -67,7 +67,7 @@ type Guiterrist = {
     album: (string | number[]) // any
 }
 
-let artist: Guiterrist = {
+let artist1: Guiterrist = {
     name: 'Davido',
     active: true,
     age: 31,
@@ -77,8 +77,31 @@ let artist: Guiterrist = {
 let artist2: Guiterrist = {
     name: 'Kizz Daniel',
     active: true,
-    age: 4,
+    age: 34,
     album: 'Boga'
 }
 
-artist = artist2
+//artist1 = artist2
+
+// function
+
+const ukGuiterist = (guiterist: Guiterrist) => {
+    if(guiterist.name){
+        return `Hello ${guiterist.name.toUpperCase()}!`
+    }
+    return 'Hello!' // if name does not exit it return hello
+}
+
+console.log(ukGuiterist(artist2))
+
+// Enums
+
+
+enum Grade{
+    U = 1,
+    D,
+    C,
+    A,
+    B,
+}
+console.log(Grade.U)

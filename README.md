@@ -4,4 +4,9 @@
 ### Arrays
 ### Objects
 ### Tuple
-### Types
+### Types or Interface
+### Enums
+### Type Aliases
+### Literal types
+### Functions
+

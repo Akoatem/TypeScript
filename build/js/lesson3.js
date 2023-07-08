@@ -38,7 +38,7 @@ exampleObj.name = 'ben';
 exampleObj.isGood = false;
 exampleObj.age = 31;
 console.log(exampleObj);
-let artist = {
+let artist1 = {
     name: 'Davido',
     active: true,
     age: 31,
@@ -47,7 +47,25 @@ let artist = {
 let artist2 = {
     name: 'Kizz Daniel',
     active: true,
-    age: 4,
+    age: 34,
     album: 'Boga'
 };
-artist = artist2;
+//artist1 = artist2
+// function
+const ukGuiterist = (guiterist) => {
+    if (guiterist.name) {
+        return `Hello ${guiterist.name.toUpperCase()}!`;
+    }
+    return 'Hello!'; // if name does not exit it return hello
+};
+console.log(ukGuiterist(artist2));
+// Enums
+var Grade;
+(function (Grade) {
+    Grade[Grade["U"] = 1] = "U";
+    Grade[Grade["D"] = 2] = "D";
+    Grade[Grade["C"] = 3] = "C";
+    Grade[Grade["A"] = 4] = "A";
+    Grade[Grade["B"] = 5] = "B";
+})(Grade || (Grade = {}));
+console.log(Grade.U);
