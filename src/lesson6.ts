@@ -53,4 +53,8 @@ class WebDev extends Coder{
 const result2 = new WebDev("Dell", "Ako", "Makossa", 45)
 
 console.log(result2.getLang())
-console.log(WebDev)
+console.log(result2)
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Interface to a Class
