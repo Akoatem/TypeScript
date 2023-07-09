@@ -103,13 +103,14 @@ const infinite = () =>{
     }
 }
 
-// instead we can create a custom function
+// instead we can create a custom type guard function
 
 const isNumber = (value: any): boolean =>{
     return(typeof value === 'number')
     ?true : false
 }
 
+// use of never type
 const stringOrNumber = (value: number | string):
  string =>{
     if(typeof value === 'string') return 'string'

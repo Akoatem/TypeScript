@@ -65,11 +65,12 @@ const infinite = () => {
             break;
     }
 };
-// instead we can create a custom function
+// instead we can create a custom type guard function
 const isNumber = (value) => {
     return (typeof value === 'number')
         ? true : false;
 };
+// use of never type
 const stringOrNumber = (value) => {
     if (typeof value === 'string')
         return 'string';
