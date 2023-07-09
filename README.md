@@ -20,4 +20,7 @@
 ### Casting
 ### Assertion(as)
 ## Lesson6
+### Classes
+### Constructor, public, private and protected param
+### Interface to a Class
 
